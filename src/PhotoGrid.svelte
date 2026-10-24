@@ -5,23 +5,29 @@
   import couch from './assets/MM_Figure1_3.jpg'
   import chair from './assets/MM_Figure1_4.jpg'
   import camera from './assets/MM_Figure4_1.jpg'
+  import { range } from './lib/Range'
 
+  // breakpoint to change photo grid format
   const isMobile = new MediaQuery('max-width: 1025px')
 
+  // pixels scrolled from top
   let scrollY = $state(0)
+  // height of window
   let innerHeight = $state(0)
+  // spacer
   let scrollEl = $state()
 
+  // controls speed of animations - larger the number, the slower it is
   const pace = 2
 
+  // measures where spacer is
   let p = $derived.by(() => {
     scrollY
     if (!scrollEl || !innerHeight) return 0
     return (1 - scrollEl.getBoundingClientRect().top / innerHeight) / pace
   })
 
-  const range = (value, start, end) => Math.min(1, Math.max(0, (value - start) / (end - start)))
-
+  // timeline for image transitions
   const steps = {
     desktop: {
       chair: [0.3, 0.6],
@@ -37,6 +43,7 @@
     },
   }
 
+  // control opacity change based on screen size
   let active = $derived(isMobile.current ? steps.mobile : steps.desktop)
   const opacity = (name) => (active[name] ? range(p, ...active[name]) : 1)
 </script>

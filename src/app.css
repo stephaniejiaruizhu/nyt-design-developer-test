@@ -1,6 +1,15 @@
 @import url(./fonts.css);
 
-/* css reset from https://www.joshwcomeau.com/css/custom-css-reset/ */
+/* Design tokens */
+:root {
+  --background: #f8feef;
+
+  --font-light: 'NYT Cheltenham Light', Georgia, 'Times New Roman', Times, serif;
+  --font-bold: 'NYT Cheltenham Bold', Georgia, 'Times New Roman', Times, serif;
+  --font-display: 'NYT Cheltenham Display Demi', Georgia, 'Times New Roman', Times, serif;
+}
+
+/* CSS reset, adapted from https://www.joshwcomeau.com/css/custom-css-reset/ */
 *,
 *::before,
 *::after {
@@ -51,6 +60,7 @@ h6 {
 p {
   text-wrap: pretty;
 }
+
 h1,
 h2,
 h3,
@@ -60,17 +70,12 @@ h6 {
   text-wrap: balance;
 }
 
-#root,
-#__next {
-  isolation: isolate;
+/* General page styling */
+
+html {
+  background-color: var(--background);
 }
 
-:root {
-  --background: #f8feef;
-  background-color: #f8feef;
-}
-
-/* get rid of overscroll bounce */
 html,
 body {
   overscroll-behavior-y: none;

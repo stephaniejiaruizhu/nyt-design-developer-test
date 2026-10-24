@@ -1,11 +1,11 @@
 <script>
-  import Background from './Background.svelte'
+  import HeadlineScroll from './HeadlineScroll.svelte'
   import PhotoGrid from './PhotoGrid.svelte'
 </script>
 
 <section>
   <div class="app-wrapper">
-    <Background />
+    <HeadlineScroll />
     <PhotoGrid />
   </div>
 </section>
