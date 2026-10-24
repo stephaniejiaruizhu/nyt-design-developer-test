@@ -3,7 +3,6 @@
 /* Design tokens */
 :root {
   --background: #f8feef;
-
   --font-light: 'NYT Cheltenham Light', Georgia, 'Times New Roman', Times, serif;
   --font-bold: 'NYT Cheltenham Bold', Georgia, 'Times New Roman', Times, serif;
   --font-display: 'NYT Cheltenham Display Demi', Georgia, 'Times New Roman', Times, serif;

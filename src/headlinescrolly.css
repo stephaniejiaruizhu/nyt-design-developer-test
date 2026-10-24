@@ -172,8 +172,8 @@
 
 .topper-cover {
   position: sticky;
-  top: 100vh;
   top: 100dvh;
-  height: 100dvh;
+  height: 100lvh;
   background: var(--background);
+  z-index: 2;
 }
