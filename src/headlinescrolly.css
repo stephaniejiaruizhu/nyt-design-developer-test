@@ -19,7 +19,8 @@
 .topper-stage {
   position: sticky;
   top: 0;
-  height: 100svh;
+  height: 100vh;
+  height: 100dvh;
 }
 
 .topper-image-left,
@@ -48,7 +49,8 @@
 .topper-text-sticky-outer {
   position: sticky;
   top: 0;
-  height: 100svh;
+  height: 100vh;
+  height: 100dvh;
 }
 
 .topper-text-sticky {
