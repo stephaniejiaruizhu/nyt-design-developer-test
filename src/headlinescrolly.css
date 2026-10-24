@@ -157,3 +157,23 @@
     display: none;
   }
 }
+
+/* cover that hides text on mobile */
+.topper-cover-layer {
+  display: none;
+
+  @media (max-width: 740px) {
+    display: block;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+}
+
+.topper-cover {
+  position: sticky;
+  top: 100vh;
+  top: 100dvh;
+  height: 100dvh;
+  background: var(--background);
+}

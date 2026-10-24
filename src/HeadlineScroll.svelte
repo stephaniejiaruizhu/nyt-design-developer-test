@@ -36,6 +36,10 @@
   <div class="background-wrapper">
     <!-- left side images -->
     <div class="topper-left-wrapper">
+      <!-- background color cover that hides text until it scrolls over image on mobile -->
+      <div class="topper-cover-layer" aria-hidden="true">
+        <div class="topper-cover"></div>
+      </div>
       <div class="topper-media">
         <div class="topper-stage">
           <img
