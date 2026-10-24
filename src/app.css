@@ -69,3 +69,13 @@ h6 {
   --background: #f8feef;
   background-color: #f8feef;
 }
+
+/* get rid of overscroll bounce */
+html,
+body {
+  overscroll-behavior-y: none;
+}
+
+.app-wrapper {
+  position: relative;
+}
