@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'NYT Cheltenham Display Demi';
+  src:
+    url('/fonts/NYTCheltenhamDisplayDemi.woff2') format('woff2'),
+    url('/fonts/NYTCheltenhamDisplayDemi.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NYT Cheltenham Light';
+  src:
+    url('/fonts/NYTCheltenhamLight.woff2') format('woff2'),
+    url('/fonts/NYTCheltenhamLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NYT Cheltenham Bold';
+  src:
+    url('/fonts/NYTCheltenhamBold.woff2') format('woff2'),
+    url('/fonts/NYTCheltenhamBold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
