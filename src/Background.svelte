@@ -6,6 +6,7 @@
 
   let scrollY = $state(0)
   let innerHeight = $state(0)
+  let sectionHeight = $state(0)
 
   let progress = $derived(innerHeight ? Math.max(0, scrollY / innerHeight) : 0)
 
@@ -42,11 +43,16 @@
     hedSpans.forEach((el) => el && io.observe(el))
     return () => io.disconnect()
   })
+
+  let endProgress = $derived(innerHeight ? (sectionHeight - innerHeight) / innerHeight : 0)
+  let topperOpacity = $derived(
+    sectionHeight ? 1 - range(progress, endProgress - 0.5, endProgress) : 1,
+  )
 </script>
 
 <svelte:window bind:scrollY bind:innerHeight />
 
-<section>
+<section bind:clientHeight={sectionHeight} style:opacity={topperOpacity}>
   <div class="background-wrapper">
     <div class="topper-left-wrapper">
       <div class="topper-media">
@@ -91,8 +97,9 @@
             {/each}
           </h1>
           <p class="topper-dek">
-            A late summer meditation on time, loss, and solace in the natural world, made from the
-            work of the photographer Mary Manning and the poet Brian Turner.
+            A late summer meditation <br /> on time, loss, and solace in <br />the natural world,
+            made from <br />the work of the photographer <br />Mary Manning and the <br />poet Brian
+            Turner.
           </p>
         </div>
       </div>
@@ -117,3 +124,7 @@
     </div>
   </div>
 </section>
+
+<style>
+  @import './headlinescrolly.css';
+</style>
