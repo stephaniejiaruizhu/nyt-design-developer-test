@@ -56,9 +56,9 @@
 /* mobile styling */
 @media (max-width: 1025px) {
   .photogrid-wrapper-outer {
-    --w: min(100vw, 46svh);
-    --small-h: calc(var(--w) / 2.42);
-    --top-h: calc(var(--small-h) * 2.62);
+    --w: min(100vw, 67svh);
+    --small-h: calc(var(--w) / 2.49);
+    --top-h: calc(var(--small-h) * 2.72);
 
     height: auto;
     top: 50%;

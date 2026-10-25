@@ -35,7 +35,6 @@
 /* transition images */
 .topper-image-next {
   opacity: 0;
-  will-change: opacity;
   transition: opacity 0.25s linear;
 }
 
@@ -97,6 +96,7 @@
     margin-inline: auto;
     width: fit-content;
     max-width: 85%;
+    color: #e6e6e6;
   }
 }
 
