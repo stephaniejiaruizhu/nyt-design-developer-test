@@ -165,7 +165,10 @@
   @media (max-width: 740px) {
     display: block;
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: calc(-1 * var(100dvh));
     pointer-events: none;
   }
 }
@@ -175,5 +178,4 @@
   top: 100dvh;
   height: 100lvh;
   background: var(--background);
-  z-index: 2;
 }
