@@ -20,7 +20,7 @@
   position: sticky;
   top: 0;
   height: 100vh;
-  height: 100dvh;
+  height: 100lvh;
 }
 
 .topper-image-left,
@@ -49,7 +49,7 @@
   position: sticky;
   top: 0;
   height: 100vh;
-  height: 100dvh;
+  height: 100svh;
 }
 
 .topper-text-sticky {
@@ -164,14 +164,14 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: calc(-1 * 100dvh);
+    bottom: calc(-1 * 100lvh);
     pointer-events: none;
   }
 }
 
 .topper-cover {
   position: sticky;
-  top: 100dvh;
+  top: 100lvh;
   height: 100lvh;
   background: var(--background);
   z-index: 2;
