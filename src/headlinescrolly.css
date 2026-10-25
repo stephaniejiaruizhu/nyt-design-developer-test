@@ -100,10 +100,6 @@
   }
 }
 
-.topper-text-outer {
-  will-change: opacity;
-}
-
 .kicker {
   font-family: var(--font-bold);
   text-transform: uppercase;
@@ -168,7 +164,7 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: calc(-1 * var(100dvh));
+    bottom: calc(-1 * 100dvh);
     pointer-events: none;
   }
 }
