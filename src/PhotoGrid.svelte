@@ -34,12 +34,12 @@
       outfit: [0.3, 0.6],
       couch: [0.8, 1.1],
       silverware: [1.0, 1.3],
-      camera: [1.8, 2.1],
+      camera: [1.6, 1.9],
     },
     mobile: {
       couch: [0.3, 0.6],
       silverware: [0.8, 1.1],
-      camera: [1.8, 2.1],
+      camera: [1.6, 1.9],
     },
   }
 
