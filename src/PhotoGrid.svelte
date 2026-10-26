@@ -30,16 +30,16 @@
   // timeline for image transitions
   const steps = {
     desktop: {
-      chair: [0.3, 0.6],
-      outfit: [0.3, 0.6],
-      couch: [0.8, 1.1],
-      silverware: [1.0, 1.3],
-      camera: [1.6, 1.9],
+      chair: [0.3, 0.7],
+      outfit: [0.3, 0.7],
+      couch: [0.9, 1.2],
+      silverware: [0.9, 1.2],
+      camera: [1.7, 2.0],
     },
     mobile: {
-      couch: [0.3, 0.6],
-      silverware: [0.8, 1.1],
-      camera: [1.6, 1.9],
+      couch: [0.3, 0.7],
+      silverware: [0.9, 1.2],
+      camera: [1.7, 2.0],
     },
   }
 
@@ -54,33 +54,33 @@
   <div class="photogrid-wrapper-outer">
     <img
       src={chair}
-      alt="..."
+      alt="wooden chair with one leg on a red and white carpet"
       class="grid-image grid-image-small"
       style:opacity={opacity('chair')}
     />
     <div class="photogrid-wrapper-middle">
       <img
         src={camera}
-        alt="..."
+        alt="person holding a camera vertically"
         class="grid-image grid-image-top"
         style:opacity={opacity('camera')}
       />
       <div class="photogrid-wrapper-middle-inner">
         <img
           src={silverware}
-          alt="..."
+          alt="two sets of forks, knives, napkin and placemat on a table"
           class="grid-image grid-image-small"
           style:opacity={opacity('silverware')}
         />
         <img
           src={outfit}
-          alt="..."
+          alt="person wearing a white top, jeans and a colorful jacket around their waist"
           class="grid-image grid-image-small desktop-only"
           style:opacity={opacity('outfit')}
         />
         <img
           src={couch}
-          alt="..."
+          alt="gray-blue one-seater couch with yellow cushion"
           class="grid-image grid-image-small mobile-only"
           style:opacity={opacity('couch')}
         />
@@ -88,7 +88,7 @@
     </div>
     <img
       src={couch}
-      alt="..."
+      alt="gray-blue one-seater couch with yellow cushion"
       class="grid-image grid-image-small desktop-only"
       style:opacity={opacity('couch')}
     />
