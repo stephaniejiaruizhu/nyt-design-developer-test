@@ -1,10 +1,10 @@
 <script>
   import { MediaQuery } from 'svelte/reactivity'
-  import silverware from './assets/MM_Figure1_1.jpg'
-  import outfit from './assets/MM_Figure1_2.jpg'
-  import couch from './assets/MM_Figure1_3.jpg'
-  import chair from './assets/MM_Figure1_4.jpg'
-  import camera from './assets/MM_Figure4_1.jpg'
+  import silverware from './assets/MM_Figure1_1.jpg?format=webp'
+  import outfit from './assets/MM_Figure1_2.jpg?format=webp'
+  import couch from './assets/MM_Figure1_3.jpg?format=webp'
+  import chair from './assets/MM_Figure1_4.jpg?format=webp'
+  import camera from './assets/MM_Figure4_1.jpg?format=webp'
   import { range } from './lib/Range'
 
   // breakpoint to change photo grid format

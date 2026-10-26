@@ -1,8 +1,8 @@
 <script>
-  import IntroBackgroundLeft from './assets/intro_desktop_01.png'
-  import IntroBackgroundRight from './assets/intro_desktop_02.jpg'
-  import IntroBackgroundLeftTwo from './assets/intro_desktop_03.jpg'
-  import IntroBackgroundRightTwo from './assets/intro_desktop_04.jpg'
+  import IntroBackgroundLeft from './assets/intro_desktop_01.png?format=webp'
+  import IntroBackgroundRight from './assets/intro_desktop_02.jpg?format=webp'
+  import IntroBackgroundLeftTwo from './assets/intro_desktop_03.jpg?format=webp'
+  import IntroBackgroundRightTwo from './assets/intro_desktop_04.jpg?format=webp'
   import { range } from './lib/Range'
 
   // pixels scrolled from top
